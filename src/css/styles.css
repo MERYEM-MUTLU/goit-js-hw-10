@@ -1,18 +1,162 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.div-index {
+  text-align: center;
+  height: 100vh; /* Tam ekran h. */
+  display: flex;
+  flex-direction: column; /* Dikey hizala  */
+  justify-content: center; /* Dikeyde ortala */
+  align-items: center; /* Yatayda ortala */
+  gap: 30px; /* Butonlar arası boşluk */
+}
+.index-a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #464850;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.index-a:hover {
+  background-color: #867b7b;
+  color: #fff;
+}
+.timer-container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+}
+#datetime-picker {
+  padding: 8px 12px;
+  margin-right: 10px;
+  font-size: 24px;
+  margin-right: 10px;
+  border: 1px solid #cfc0c0;
+  border-radius: 8px;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+  border: 1px solid #cfc0c0;
+  border-radius: 8px;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 2rem;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.label {
+  font-size: 24px;
+  color: #998b8b;
+}
+.snackbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form {
+  background-color: #ffffffb9;
+  border: 1px solid #706666;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+.form label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form input[type='number'] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.fieldset {
+  border: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.fieldset label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.fieldset input[type='radio'] {
+  margin-right: 10px;
+}
+.create-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.create-div button {
+  background-color: #879487;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-div button:hover {
+  background-color: #92a092;
+}
